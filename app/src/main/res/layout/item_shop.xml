@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="265px"
+        android:layout_marginTop="10px"
+        android:layout_height="265px"
+        android:background="@mipmap/bg_item_shop">
+
+        <LinearLayout
+            android:layout_width="114px"
+            android:layout_height="32px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/btn_reduce"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_reduce"
+                />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="16px"/>
+
+            <ImageView
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_add"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+          />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="纯净矿泉水"
+            android:textColor="@android:color/white"
+            android:textSize="27px"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥12.00"
+            android:textColor="#cc0000"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16px"/>
+    </RelativeLayout>
+</LinearLayout>

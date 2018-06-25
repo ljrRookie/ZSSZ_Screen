@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@mipmap/bg_item"
+                android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg_recharge"
+                />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="75dp"
+            android:layout_height="225dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_blue_wither_bg"
+            android:gravity="center"
+            android:text="充\n电\n说\n明"
+            android:textColor="#ffffff"
+            android:textSize="33sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_item"
+            android:layout_width="888dp"
+           android:paddingTop="60dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_charge_item"/>
+        </RelativeLayout>
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_commit"
+            android:layout_width="480dp"
+            android:layout_height="90dp"
+            android:text="立即充电"
+            android:textColor="#ffffff"
+            android:layout_below="@id/content"
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+            app:sCornersBottomRightRadius="16dp"
+            app:sCornersTopRightRadius="16dp"
+            app:sCornersBottomLeftRadius="16dp"
+            app:sCornersTopLeftRadius="16dp"
+            android:layout_marginTop="140dp"
+            app:sGradientEndColor="@color/yellow_low"
+            app:sGradientOrientation="BOTTOM_TOP"
+            app:sGradientStartColor="@color/yellow_high"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

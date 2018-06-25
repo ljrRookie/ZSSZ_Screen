@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ZSSZ_Screen</string>
+    <string name="left_arrow">\u25C4</string>
+    <string name="right_arrow">\u25BA</string>
+</resources>

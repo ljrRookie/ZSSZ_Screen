@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzah.zssz_screen.LauncherActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_item"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="650dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/btn_recharge_bg"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="请输入机器码"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:layout_marginTop="80dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edit_machine_num"
+            android:layout_width="350dp"
+            android:layout_marginTop="50dp"
+            android:hint="请点击输入机器码"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25sp"
+            android:background="@drawable/btn_wither_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="60dp"/>
+        <EditText
+            android:id="@+id/edit_machine_num_agin"
+            android:layout_width="350dp"
+            android:hint="请确认输入的机器码"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="25sp"
+            android:background="@drawable/btn_wither_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="60dp"/>
+        <com.allen.library.SuperTextView
+            android:id="@+id/btn_commit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            app:sBackgroundDrawableRes="@drawable/btn_yellow_selector"
+            app:sCenterTextColor="#ffffff"
+            android:layout_marginBottom="50dp"
+            app:sCenterTextSize="30sp"
+            app:sCenterTextString="提交"/>
+
+    </LinearLayout>
+</RelativeLayout>

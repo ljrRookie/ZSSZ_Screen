@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_item"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/btn_shop_bg">
+        <!--商品-->
+        <LinearLayout
+            android:id="@+id/ll_shop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+
+
+
+
+
+        </LinearLayout>
+        <!--商品页数-->
+        <LinearLayout
+            android:id="@+id/ll_page"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_last"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="33dp"
+                android:background="@drawable/btn_wither_bg"
+                android:gravity="center"
+                android:text="&#060;"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textSize="25sp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_page"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+             />
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginLeft="33dp"
+                android:background="@drawable/btn_wither_bg"
+                android:gravity="center"
+                android:text="&#062;"
+                android:textColor="#666666"
+                android:textSize="25sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_money"
+        android:layout_width="120px"
+        android:layout_height="102px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="347px"
+        android:background="@drawable/btn_yellow_bg_gradient">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_cart"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:scaleType="centerInside"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_cart"
+                />
+
+            <TextView
+                android:id="@+id/rv_cart"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_cart"
+                android:text="¥0.00"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textSize="18px"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.allen.library.SuperTextView
+        android:id="@+id/btn_buy"
+        android:layout_width="120px"
+        android:layout_height="102px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="70px"
+        android:layout_below="@id/btn_money"
+        app:sBackgroundDrawableRes="@drawable/btn_yellow_selector"
+        app:sCenterTextColor="#ffffff"
+        app:sCenterTextSize="18px"
+        app:sCenterTextString="立即购买"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="150px"
+        android:layout_marginLeft="150px"
+        android:layout_marginRight="225px"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_last"
+            android:layout_width="52px"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_arrows_left_selector"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shop"
+            android:layout_width="0dp"
+            android:layout_marginLeft="18px"
+            android:visibility="gone"
+            android:layout_marginRight="18px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <RelativeLayout
+            android:id="@+id/empty_shop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="50dp"
+            android:visibility="visible"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/empty_shop"
+                android:layout_height="match_parent"/>
+<TextView
+    android:id="@+id/tv_empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="正在连接网络~"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="300dp"
+    android:textSize="50sp"
+    />
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="52px"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_arrows_right_selector"
+            />
+    </LinearLayout>
+</RelativeLayout>
